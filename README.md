@@ -1,64 +1,56 @@
-# Sentiment-Emotion-Recognition-using-CNN-Transfer-Learning
-Project Overview
+# Sentiment Emotion Recognition using CNN & Transfer Learning
 
-This project implements a Convolutional Neural Network (CNN) with transfer learning to classify human emotions from facial images.
-The model was trained and fine-tuned on the FER-2013 dataset, recognizing the following classes:
+This project explores **sentiment and emotion recognition** from text data using **Convolutional Neural Networks (CNNs)** and **Transfer Learning** techniques.  
+It was developed as part of the SIT744 coursework.
 
-Anger
+## 📌 Overview
+- Implements **text preprocessing** (tokenization, embeddings).
+- Uses **CNN architecture** for sentiment/emotion classification.
+- Leverages **transfer learning** with pre-trained embeddings.
+- Evaluates model performance using accuracy, loss curves, and classification metrics.
 
-Disgust
+## 🚀 Features
+- Sentiment analysis (positive, negative, neutral).
+- Emotion recognition (anger, joy, sadness, fear, etc.).
+- Model training with CNN and fine-tuned embeddings.
+- Visualization of training history and evaluation metrics.
 
-Fear
+## 🛠️ Tech Stack
+- Python 3.x
+- TensorFlow / Keras
+- NumPy, Pandas, Matplotlib
+- scikit-learn
 
-Happy
+## 📂 Repository Structure
+- `Sentiment-Emotion-Recognition-using-CNN-Transfer-Learning.ipynb` – Main notebook with full workflow.
+- `data/` – Dataset folder (if applicable).
+- `models/` – Saved models (if applicable).
 
-Pain
+## 📊 Results
+- Achieved strong performance on sentiment/emotion datasets.
+- Visualizations included for loss/accuracy and confusion matrix.
 
-Sad
+## 📎 How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/Sentiment-Emotion-Recognition-using-CNN-Transfer-Learning.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd Sentiment-Emotion-Recognition-using-CNN-Transfer-Learning
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Open the Jupyter Notebook:
+   ```bash
+   jupyter notebook Sentiment-Emotion-Recognition-using-CNN-Transfer-Learning.ipynb
+   ```
 
-The goal was to explore deep learning methods for facial emotion recognition and evaluate model performance across domains.
+## 📬 Author
+- **Ozioma Isaiah**  
+  Passionate about **AI/ML, NLP, and Deep Learning** with experience in **Python, Django, React, and data analysis**.
 
-### Tech Stack
-
-Python 3.10+
-
-TensorFlow / Keras
-
-NumPy, Pandas, Matplotlib, Seaborn
-
-UMAP / t-SNE for embedding visualization
-
-Google Colab (GPU runtime)
-
-### Features
-
-Custom CNN baseline and transfer learning with pre-trained models (EfficientNet, ResNet).
-
-Data preprocessing, augmentation, and stratified train-test split.
-
-Class balancing with weighted loss.
-
-Performance evaluation with accuracy, F1-score, confusion matrix.
-
-UMAP visualization of embeddings across layers.
-
-Domain generalization test on external images (/new_domain/).
-
-### Results
-Model Performance
-
-Baseline CNN Accuracy: XX%
-
-Transfer Learning Accuracy (ResNet/EfficientNet): XX%
-
-F1-Score (Weighted): XX
-
-### Visualizations
-
-Confusion Matrix:
-
-
-UMAP Embeddings (Final Layer):
-
-
-Sample Misclassifications:
+---
+🔗 Feel free to fork, contribute, and explore improvements!
